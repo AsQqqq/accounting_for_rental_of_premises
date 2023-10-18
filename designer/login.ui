@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>668</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+	background-color: 0;
+	border: 0;
+	border-radius: 0;
+}
+*:hover {
+	background-color: 0;
+	border: 0;
+	border-radius: 0;
+}</string>
+  </property>
+  <widget class="QPushButton" name="signup">
+   <property name="geometry">
+    <rect>
+     <x>265</x>
+     <y>260</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">* {
+color: white;
+background-color: #2d3035;
+border: 2px solid #878787;
+border-radius: 15px;
+}
+
+*:hover {
+border: 2px solid #DBDBDB;
+}
+
+*:focus {
+border-color: green;
+border-color: red;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Войти</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="login">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>100</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">* {
+color: white;
+background-color: #2d3035;
+border: 2px solid #878787;
+border-bottom: 2px solid red;
+border-radius: 15px;
+}
+
+*:hover {
+border-color: #DBDBDB;
+}
+
+*:focus {
+background-color: #181C20;
+border-color: #fd413c;
+}</string>
+   </property>
+   <property name="maxLength">
+    <number>15</number>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="password">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>180</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">* {
+color: white;
+background-color: #2d3035;
+border: 2px solid #878787;
+border-bottom: 2px solid red;
+border-radius: 15px;
+}
+
+*:hover {
+border-color: #DBDBDB;
+}
+
+*:focus {
+background-color: #181C20;
+border-color: #fd413c;
+}</string>
+   </property>
+   <property name="maxLength">
+    <number>15</number>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>20</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">* {
+background-image: url(:/close/image/close.png);
+}
+
+*:hover {
+background-image: url(:/close/image/close-red.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="hideButton">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>21</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">* {
+background-image: url(:/hide/image/hide.png);
+}
+
+*:hover {
+background-image: url(:/hide/image/hide-gray.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="loginlabel">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>70</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+font: 8pt &quot;Montserrat&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Логин</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="passwordlabel">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>150</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+font: 8pt &quot;Montserrat&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Пароль</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>651</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #212529;
+border-radius: 20px</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>login</zorder>
+  <zorder>signup</zorder>
+  <zorder>password</zorder>
+  <zorder>closeButton</zorder>
+  <zorder>hideButton</zorder>
+  <zorder>loginlabel</zorder>
+  <zorder>passwordlabel</zorder>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>

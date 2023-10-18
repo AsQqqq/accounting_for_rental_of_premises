@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>670</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+	background-color: 0;
+	border: 0;
+	border-radius: 0;
+}
+*:hover {
+	background-color: 0;
+	border: 0;
+	border-radius: 0;
+}</string>
+  </property>
+  <widget class="QPushButton" name="rented">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">* {
+color: white;
+background-color: #2d3035;
+border: 2px solid #878787;
+border-radius: 7px;
+}
+
+*:hover {
+border: 2px solid #DBDBDB;
+}
+
+*:disabled {
+	background-color: #555A62;
+	color: gray;
+	border-color: gray;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>арендованные</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>20</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">* {
+background-image: url(:/close/image/close.png);
+}
+
+*:hover {
+background-image: url(:/close/image/close-red.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="hideButton">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>21</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">* {
+background-image: url(:/hide/image/hide.png);
+}
+
+*:hover {
+background-image: url(:/hide/image/hide-gray.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="choose">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>121</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+font: 8pt &quot;Montserrat&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Выберите квартиру</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="unoccupied">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">* {
+color: white;
+background-color: #2d3035;
+border: 2px solid #878787;
+border-radius: 7px;
+}
+
+*:hover {
+border: 2px solid #DBDBDB;
+}
+
+*:disabled {
+	background-color: #555A62;
+	color: gray;
+	border-color: gray;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>незанятые</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exit">
+   <property name="geometry">
+    <rect>
+     <x>585</x>
+     <y>378</y>
+     <width>75</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">* {
+color: gray;
+}
+*:hover {
+color: red;
+}</string>
+   </property>
+   <property name="text">
+    <string>выйти</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>651</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #212529;
+border-radius: 20px</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QScrollArea" name="scroll">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>631</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">* {
+background-color: #212529;
+color: white;
+}</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>631</width>
+       <height>281</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>rented</zorder>
+  <zorder>hideButton</zorder>
+  <zorder>choose</zorder>
+  <zorder>unoccupied</zorder>
+  <zorder>exit</zorder>
+  <zorder>closeButton</zorder>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>
